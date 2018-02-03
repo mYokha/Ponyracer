@@ -7,16 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var PonyRacerAppComponent = /** @class */ (function () {
-    function PonyRacerAppComponent() {
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'app';
     }
-    PonyRacerAppComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'ponyracer-app',
-            template: "\n    <h1>PonyRacer</h1>\n    <ns-races></ns-races>\n    <ns-ponies></ns-ponies>\n  "
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
         })
-    ], PonyRacerAppComponent);
-    return PonyRacerAppComponent;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.PonyRacerAppComponent = PonyRacerAppComponent;
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

@@ -7,16 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var PonyRacerAppComponent = /** @class */ (function () {
-    function PonyRacerAppComponent() {
+var platform_browser_1 = require("@angular/platform-browser");
+var app_component_1 = require("./app.component");
+var AppModule = /** @class */ (function () {
+    function AppModule() {
     }
-    PonyRacerAppComponent = __decorate([
-        core_1.Component({
-            selector: 'ponyracer-app',
-            template: '<h1>PonyRacer</h1>'
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [app_component_1.PonyRacerAppComponent]
         })
-    ], PonyRacerAppComponent);
-    return PonyRacerAppComponent;
+    ], AppModule);
+    return AppModule;
 }());
-exports.PonyRacerAppComponent = PonyRacerAppComponent;
-//# sourceMappingURL=app.components.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

@@ -15,9 +15,12 @@ import { Component } from '@angular/core';
   `
 })
 export class PoniesComponent {
-  ponies: Array<any> = [{ name: 'Rainbow Dash' }, { name: 'Pinkie Pie' }]
+  ponies: Array<any> = [
+    { name: 'Rainbow Dash' },
+    { name: 'Pinkie Pie' }
+  ]
 
   refreshPonies() {
-    this.ponies = [{ name: 'Fluttershy' }, { name: 'Rarity' }];
+    this.ponies = [{ name: 'Fluttershy' }, { name: 'Rarity' }]
   }
 }
